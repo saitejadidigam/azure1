@@ -33,5 +33,5 @@ jobs:
       with:
         app-name: 'saididigam'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_d5fea3312aad44be98b26b44e703482d }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_6d353261a52544bc9fcd47df10f7ec8b }}
         package: './myapp.zip'
