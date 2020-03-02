@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+    <title>{% block title %}{% endblock %}  Home</title>
+    {% endblock %}
+</head>
+<body align="center">
+<header>
+<b>
+Kaushik Reddy Guntaka , 1001558394
+</b>
+</header>
+<p>
+ <form action="/getlat" method="get" align="center">
+ <table>
+	<form action="/getlat" method="get">
+   Magnitude Range frommmmmm<input type="text" name="rangefrom1" maxlength="200" width="60"> <br/>
+    Magnitude Range To<input type="text" name="rangeto1" maxlength="200" width="60"><br/>
+    Number of queries to run:<input type="text" name="nom1" maxlength="200" width="60"></br>
+   <input type="submit" value="query without cache"><br/><br/>
+</form>
+
+   </table>
+</form>
+</p>
+<p>
+
+</p>
+</body>
+</html>

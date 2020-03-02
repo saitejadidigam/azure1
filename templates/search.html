@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+    <title>{% block title %}{% endblock %} Grades</title>
+    {% endblock %}
+</head>
+<body>
+<header>
+<b>
+Saiteja Didigam
+</b>
+</header>
+
+<form action="" method="post" name ="form1">
+  name:<br>
+  <input type="text" name="name1"><br>
+  <!--<input type="number" name="name2"><br>-->
+
+
+  <input type="submit" value="Submit">
+</form>
+
+
+
+<p>
+{% block content %}
+{% for city in ci %}
+
+  <!-- This retrives all the data based on the content typed in textbox of index.html -->
+  <tr>
+        <td>{{ city | safe }}</td>
+
+
+    <tr>
+
+{% endfor %}
+ {% endblock %}
+</p>
+</body>
+</html>
